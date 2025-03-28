@@ -21,8 +21,14 @@ const Customer = sequelize.define('Customer', {
     },
     age: {
         type: DataTypes.INTEGER,
+        allowNull: false,
         defaultValue: 18
+    },
+    city: {
+        type: DataTypes.STRING,
+        allowNull: false
     }
+    
 })
 
 module.exports = Customer;
