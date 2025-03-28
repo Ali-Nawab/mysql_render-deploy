@@ -27,6 +27,11 @@ const Customer = sequelize.define('Customer', {
     city: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    status: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: true
     }
     
 })
