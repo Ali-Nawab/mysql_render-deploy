@@ -18,6 +18,10 @@ const Customer = sequelize.define('Customer', {
     phone: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    age: {
+        type: DataTypes.INTEGER,
+        defaultValue: 18
     }
 })
 
